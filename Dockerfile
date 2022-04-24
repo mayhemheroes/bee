@@ -9,7 +9,6 @@ RUN ${HOME}/.cargo/bin/rustup default nightly
 RUN ${HOME}/.cargo/bin/cargo install -f cargo-fuzz
 RUN ${HOME}/.cargo/bin/rustup update nightly
 
-
 ## Add source code to the build stage.
 ADD . /bee
 WORKDIR /bee/bee-message
