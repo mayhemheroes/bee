@@ -1,0 +1,5 @@
+project: bee
+target: fuzz_message
+
+cmds:
+  - cmd: /fuzz_message
