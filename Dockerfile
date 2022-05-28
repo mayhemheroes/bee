@@ -7,10 +7,8 @@ RUN apt-get update && \
 RUN curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 RUN ${HOME}/.cargo/bin/rustup default nightly
 RUN ${HOME}/.cargo/bin/cargo install -f cargo-fuzz
-
-# RUN ${HOME}/.cargo/bin/rustup override set nightly-2022-04-24
 RUN ${HOME}/.cargo/bin/rustup update nightly
-# RUN ${HOME}/.cargo/bin/rustup update stable
+
 
 ## Add source code to the build stage.
 ADD . /bee
