@@ -4,9 +4,6 @@ project: bee
 # Target name (should be unique within the project)
 target: bee-message
 
-# Base image to run the binary in.
-image: ghcr.io/prateekvishnu/bee-message:latest
-
 # List of commands used to test the target
 cmds:
 
